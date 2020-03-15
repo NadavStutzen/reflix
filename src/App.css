@@ -1,16 +1,14 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(29, 1, 1);
+  color: #90d2e4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:link {
+  text-decoration: none;
+
 }
 
 .App-header {
@@ -25,9 +23,22 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #141718;
 }
-
+#links{
+  display: grid;
+  grid-template-columns: 3fr 6fr;
+  margin-bottom: 20px;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#links >span {
+  font-size: 10vh;
+  justify-self: end;
+  margin-right: 20px;
+  color: #ff0a2bef;
+  font-weight: bold;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +46,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movie{
+  display: inline-block;
+  height: 200px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 1fr 12fr;
+  justify-items: start;
+}
+img{
+  height: 170px;
+}
+.rented{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.rented > img{
+  height: 150px;
+}
+.unrented > img{
+  height: 150px;
+}
+.unrented{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.landing{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.user-box{
+  background-color: #61dafb;
+  height: 60px;
+  width:  100px;
+  background-color: #22834a;
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.input{
+  border-radius: 10px;
+  background-color: #22834a;
+  display: inline;
+}
+input{
+  border-radius: 10px;
 }
